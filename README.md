@@ -10,7 +10,8 @@ Affected folders:
 - IOSURFACE_HEADER_PATH="$SDKPATH/System/Library/Frameworks/IOSurface.framework/Headers/"
 - LIBKERN_HEADER_PATH="$SDKPATH/usr/include/libkern"
 
-meanwhile the SDKPATH is written to belongings 
+meanwhile the SDKPATH is written to belongings
+
     "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 
 2021-02-02
