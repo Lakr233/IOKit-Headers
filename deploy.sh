@@ -31,6 +31,9 @@ IOKIT_HEADER_PATH="$SDKPATH/System/Library/Frameworks/IOKit.framework/Headers/"
 IOSURFACE_HEADER_PATH="$SDKPATH/System/Library/Frameworks/IOSurface.framework/Headers/"
 LIBKERN_HEADER_PATH="$SDKPATH/usr/include/libkern"
 
+# macOS xpc will not work on iOS
+# XPC_HEADER_PATH="$SDKPATH/usr/include/xpc"
+
 echo "Permission may be required before we can deploy headers"
 
 sudo echo "Permission acquired?"
@@ -49,5 +52,10 @@ echo "Sending headers to: $LIBKERN_HEADER_PATH"
 sudo rm -rf $LIBKERN_HEADER_PATH
 sudo mkdir $LIBKERN_HEADER_PATH
 sudo cp -r ./libkern/* $LIBKERN_HEADER_PATH
+
+# echo "Sending headers to: $XPC_HEADER_PATH"
+# sudo rm -rf $XPC_HEADER_PATH
+# sudo mkdir $XPC_HEADER_PATH
+# sudo cp -r ./xpc/* $XPC_HEADER_PATH
 
 echo "Deploy completed"
