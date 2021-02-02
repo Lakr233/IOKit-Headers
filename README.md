@@ -6,9 +6,12 @@ Execute deploy.sh will send these headers to Xcode SDK folder and then you can i
 
 Affected folders:
 
-- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework/Headers/
-- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOSurface.framework/Headers/
-- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/libkern
+- IOKIT_HEADER_PATH="$SDKPATH/System/Library/Frameworks/IOKit.framework/Headers/"
+- IOSURFACE_HEADER_PATH="$SDKPATH/System/Library/Frameworks/IOSurface.framework/Headers/"
+- LIBKERN_HEADER_PATH="$SDKPATH/usr/include/libkern"
+
+meanwhile the SDKPATH is written to belongings 
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 
 2021-02-02
 Copyright © 2021 Apple(maybe?). All rights not reserved.
