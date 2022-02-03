@@ -1,5 +1,7 @@
 # IOKit Headers
 
+> Use the script inside WebKit tool list "make Xcode ready for embed development" is recommended.
+
 This repository contains IOKit headers along with its belongings to functional properly.
 
 Execute deploy.sh will send these headers to Xcode SDK folder and then you can import them via #include <IOKit/IOKit.h>
